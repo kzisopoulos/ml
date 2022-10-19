@@ -97,8 +97,6 @@ main {
   border-left: none;
   border: none;
   outline: none;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
 }
 .search__bar {
   width: 100%;
@@ -108,8 +106,8 @@ main {
   border-right: none;
   outline: none;
   border: 2px solid #fefefe;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+
+  border-radius: 25px;
 }
 
 .cards__grid {
