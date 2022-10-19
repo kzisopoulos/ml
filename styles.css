@@ -76,7 +76,8 @@ section {
 
 main {
   background: url("./wallpapper.jpg");
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .search {
