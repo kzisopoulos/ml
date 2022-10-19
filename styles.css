@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100%;
+} /*16px*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #fefefe;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: 85%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+main {
+  background: url("./wallpapper.jpg");
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+.search__form {
+  width: 80%;
+  display: flex;
+  border-radius: 10px;
+}
+.search__form button {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 100px;
+  background-color: #fefefe;
+  border-left: none;
+}
+.search__bar {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border-right: none;
+  outline: none;
+}
+
+.cards__grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 1rem;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: crimson;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 350ms;
+}
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card:hover {
+  transform: scale(1.05);
+}
