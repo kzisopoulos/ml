@@ -8,7 +8,7 @@
         "newtab": "index.html"
     },
     "background": {
-        "scripts": ["app.js"]
+        "scripts": ["app.js", "weather.js"]
     },
     "offline_enabled": true,
     "permissions": [
