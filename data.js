@@ -30,9 +30,9 @@ const data = [
     linkTo: "https://www.youtube.com/",
   },
   {
-    title: "Test title 7",
-    imageSource: "./demo-logo.jpg",
-    linkTo: "https://www.google.com",
+    title: "Github",
+    imageSource: "./logos/github_logo.png",
+    linkTo: "https://github.com/",
   },
   {
     title: "Test title 8",
