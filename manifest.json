@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "MHTSOS HOME",
+    "version": "0.0.0",
+    "description": "Customize New Tabs",
+    "short_name": "MHTSOS HOME",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "background": {
+        "scripts": ["app.js"]
+    },
+    "offline_enabled": true,
+    "permissions": [
+        "storage","tabs"
+    ],
+    "options_ui": {
+        "page": "index.html",
+        "chrome_style": true
+    },
+    "applications": {
+        "gecko": {
+            "id": "jimlkosmo7@gmail.com",
+            "strict_min_version": "57.0"
+        }
+    }
+}
