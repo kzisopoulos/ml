@@ -16,7 +16,7 @@ data.forEach((item) => {
   itemDiv.className = "card__wrapper";
   itemDiv.innerHTML = `
     <h4>${item.title}</h4>
-    <a href=${item.linkTo} target="_blank" class="card">
+    <a href=${item.linkTo} class="card">
         <img
             src=${item.imageSource}
             alt="This is an image"
