@@ -9,7 +9,29 @@
   </head>
   <body>
     <main>
-      <a class="weatherwidget-io" href="https://forecast7.com/en/38d0323d74/nea-filadelfeia/" data-label_1="NEA FILADELFEIA" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="original" data-basecolor="" >NEA FILADELFEIA WEATHER</a>
+      <a
+        class="weatherwidget-io"
+        href="https://forecast7.com/en/38d0323d74/nea-filadelfeia/"
+        data-label_1="NEA FILADELFEIA"
+        data-label_2="WEATHER"
+        data-icons="Climacons Animated"
+        data-theme="original"
+        data-basecolor=""
+        >NEA FILADELFEIA WEATHER</a
+      >
+      <section class="weather">
+        <div class="weather__card">
+          <span class="title">Thu</span>
+          <span class="sub">20/8</span>
+          <div class="icon__wrapper">
+            <img src="./icons/1.svg" alt="" class="weather__icon" />
+          </div>
+          <div class="weather__temps">
+            <p class="max">23&deg;C</p>
+            <p class="min">14&deg;C</p>
+          </div>
+        </div>
+      </section>
       <section class="search container">
         <form id="search-form" class="search__form">
           <input class="search__bar" type="text" />
@@ -21,7 +43,9 @@
       </section>
     </main>
   </body>
+
   <script type="module" src="weather.js"></script>
   <script type="module" src="app.js"></script>
   <script type="module" src="data.js"></script>
+  <script type="module" src="forecast.js"></script>
 </html>

@@ -136,3 +136,31 @@ main {
 .card:hover {
   transform: scale(1.05);
 }
+
+.weather__card {
+  width: 60px;
+  /* padding: 15px; */
+  /* height: 100px; */
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather__card .title {
+  font-size: 0.725rem;
+}
+
+.sub {
+  font-size: 0.675rem;
+}
+
+.weather__temps {
+  font-size: 0.725rem;
+}
+.max {
+  color: rgba(255, 112, 141, 0.623);
+}
+.min {
+  color: #ddd;
+}
