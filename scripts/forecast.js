@@ -46,10 +46,10 @@ data.forEach((item) => {
         ${
           isDay
             ? `<div class="icon__wrapper">
-                    <img src="./icons/${item.dayData.iconNumber}.svg" alt="" class="weather__icon" />
+                    <img src="../assets/icons/${item.dayData.iconNumber}.svg" alt="" class="weather__icon" />
                </div>`
             : `<div class="icon__wrapper">
-                    <img src="./icons/${item.nightData.iconNumber}.svg" alt="" class="weather__icon" />
+                    <img src="../assets/icons/${item.nightData.iconNumber}.svg" alt="" class="weather__icon" />
                </div>`
         }
         ${
