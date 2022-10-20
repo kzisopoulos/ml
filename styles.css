@@ -171,3 +171,37 @@ main {
 .min {
   color: #ddd;
 }
+
+.weather__section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.current__weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.current__weather-icon {
+  width: 150px;
+}
+
+.location {
+  text-align: right;
+}
+.location__subtitle {
+  margin-top: -10px;
+}
+.temperature {
+  text-align: left;
+}
+.temperature__subtitle {
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 910px) {
+  .weather__section {
+    flex-direction: column;
+    gap: 0;
+  }
+}

@@ -31,7 +31,23 @@ const getWeatherForecast = async () => {
   return extractedData;
 };
 
+const getCurrentWeather = async () => {
+  const current = await fetch(
+    "http://dataservice.accuweather.com/currentconditions/v1/1274325?apikey=vgLCbl59aadsJLm3WuhR2tEuKASAW8GL"
+  );
+  const currentWeather = await current.json();
+  const { WeatherText, WeatherIcon } = currentWeather[0];
+  const Temperature = currentWeather[0].Temperature.Metric.Value;
+
+  return {
+    desc: WeatherText,
+    icon: WeatherIcon,
+    temp: Temperature,
+  };
+};
+
 const data = await getWeatherForecast();
+const current = await getCurrentWeather();
 
 const hours = new Date().getHours();
 const isDay = hours > 6 && hours < 20;
@@ -64,3 +80,23 @@ data.forEach((item) => {
     `;
   weatherGrid.appendChild(weatherDiv);
 });
+
+const currentWeatherSection = document.querySelector(".current__weather");
+currentWeatherSection.innerHTML = `
+          <div class="location">
+            <p class="location__title">Nea Filadelfeia</p>
+            <p class="location__subtitle">Weather</p>
+          </div>
+          <div class="icon__wrapper">
+            <img
+              src="./assets/icons/${current.icon}.svg"
+              alt="Icon"
+              class="current__weather-icon"
+            />
+          </div>
+          <div class="temperature">
+            <p class="temperature__title">${current.temp}&deg;C</p>
+            <p class="temperature__subtitle">${current.desc}</p>
+          </div>
+
+`;
