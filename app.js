@@ -1,4 +1,4 @@
-import data from "./data.js";
+import data from "./scripts/data.js";
 const GOOGLE_URI = "https://www.google.com/search?q=";
 
 const form = document.getElementById("search-form");
